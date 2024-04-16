@@ -1,0 +1,137 @@
+.experiencia {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+
+.experiencia .subtitulo {
+    color: #E0DFDF;
+    max-width: 4ch;
+}
+
+.experiencia-texto {
+    color: #525252;
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+    line-height: 1.33;
+    max-width: 40ch;
+}
+
+.experiencia-texto strong {
+    color: #141414;
+}
+
+.portfolio-titulo {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.portfolio-titulo-dois {
+    margin-left: 10px;
+    font-size: 1.125rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.portfolio h3 {
+    position: relative;
+}
+
+.portfolio h3::before {
+    display: block;
+    content: '';
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#551fbd, #a2eacb);
+    left: -23px;
+    position: absolute;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #F5F4F4;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    padding: 20px;
+    position: relative;
+}
+
+.portfolio-ano {
+    position: absolute;
+    width: 80px;
+    text-align: right;
+    top: 22px;
+    left: -100px;
+    color: #525252;
+    font-size: 0.875rem;
+}
+
+.portfolio-descricao {
+    line-height: 1.4;
+    font-size: 0.875rem;
+    color: #525252;
+}
+
+.portfolio-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: start;
+    margin-left: 10px;
+}
+
+.portfolio-lista li {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    border-radius: 4px;
+    background: #fff;
+    padding: 5px 10px;
+}
+
+@media (max-width: 800px) {
+    .experiencia {
+        grid-template-columns: 1fr;
+    }
+
+    .experiencia-texto {
+        margin-top: -52px;
+        font-size: 1.25rem;
+    }
+
+    .experiencia .subtitulo {
+        color: #141414;
+        margin-top: -20px;
+    }
+
+    .portfolio-ano {
+        position: initial;
+        order: 1;
+        width: initial;
+        text-align: left;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .portfolio {
+        grid-template-columns: 1fr;
+    }
+
+    .experiencia .subtitulo {
+        font-size: 2.5rem;
+    }
+
+    .portfolio-lista {
+        margin-left: 0px;
+    }
+
+    .portfolio-titulo-dois {
+        margin-left: 0px;
+    }
+}
