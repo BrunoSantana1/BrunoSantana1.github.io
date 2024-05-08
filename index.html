@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript">document.documentElement.classList.add('js')</script>
 </head>
 
 <body>
@@ -27,7 +28,7 @@
         </nav>
     </header>
 
-    <main class="introducao">
+    <main class="introducao fadeInDown" data-anime="400">
         <img src="./img/eu.jpg" alt="Lobo cinza" width="360" height="520">
         <div>
             <h1>Desenvolvedor<br> Front End</h1>
@@ -35,7 +36,7 @@
         </div>
     </main>
 
-    <section class="experiencia" id="experiencia" aria-label="Experiência">
+    <section class="experiencia fadeInDown" data-anime="300" id="experiencia" aria-label="Experiência">
         <h2 class="subtitulo">Experiência</h2>
         <div>
             <p class="experiencia-texto">Abaixo estão alguns projetos que já fiz utilizando o que estudei até agora.
@@ -88,7 +89,7 @@
         </div>
     </section>
 
-    <section class="formacao" id="formacao" aria-label="Formação">
+    <section class="formacao fadeInDown" data-anime="300" id="formacao" aria-label="Formação">
         <div class="formacao-container">
             <h2 class="subtitulo">Formação</h2>
 
@@ -150,7 +151,7 @@
         </div>
     </section>
 
-    <footer class="footer" id="contato">
+    <footer class="footer fadeInDown" data-anime="300" id="contato">
         <div class="footer-container">
             <p class="footer-texto">Tenho preferência em desenvolvimento web tanto em frontend quanto backend. Sem
                 experiência profissional na área, buscando primeira vaga de estágio. 👋</p>
@@ -170,6 +171,8 @@
             <p class="footer-copy">Portfólio do Bruno 2024 - Alguns direitos reservados.</p>
         </div>
     </footer>
+    <script type="text/javascript" src="js/plugins/simple-anime.js"></script>
+    <script type="text/javascript" src="js/plugins/script.js"></script>
 </body>
 
 </html>
