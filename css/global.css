@@ -34,6 +34,10 @@ a {
     word-break: break-all;
 }
 
+.portfolio-link {
+    color: #551fbd;
+}
+
 @media (max-width: 800px) {
     .subtitulo {
         font-size: 3rem;
